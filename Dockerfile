@@ -16,5 +16,5 @@ RUN wget -q http://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/w
 COPY run_test.sh /opt/run_test.sh
 
 # Entrypoint
-ENTRYPOINT ["wkhtmltopdf"]
+ENTRYPOINT ["/opt/run_test.sh"]
 
